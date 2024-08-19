@@ -67,3 +67,21 @@ searchButton.addEventListener("click", () => {
     curSelectedNav?.classList.remove("active");
     curSelectedNav = null;
 });
+function updateDateTime() {
+    const dateTimeDiv = document.getElementById("date-time");
+    const now = new Date();
+    const options = {
+        weekday: 'long', 
+        year: 'numeric', 
+        month: 'long', 
+        day: 'numeric', 
+        hour: 'numeric', 
+        minute: 'numeric', 
+        
+        hour12: true
+    };
+    const formattedDateTime = now.toLocaleDateString('en-US', options);
+    dateTimeDiv.textContent = formattedDateTime;
+}
+updateDateTime();
+setInterval(updateDateTime, 1000);
