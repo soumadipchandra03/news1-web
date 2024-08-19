@@ -47,6 +47,16 @@ body {
     font-family: "Poppins", sans-serif;
     color: var(--primary-text-color);
 }
+h1 {
+    
+    font-size: 26px;
+    font-weight: 100;
+    color:rgb(150, 17, 17);
+    
+    text-align: center ;
+    margin: 10px 0;
+    letter-spacing: 0px;
+}
 
 p {
     font-family: "Roboto", sans-serif;
@@ -78,18 +88,21 @@ nav {
     box-shadow: 0 0 4px #bfd4e7;
     position: fixed;
     top: 0;
-    z-index: 99;
+    z-index: 69;
     left: 0;
     right: 0;
 }
 
 .main-nav {
     justify-content: space-between;
-    padding-block: 8px;
+    padding-block: 0px;
 }
 
 .company-logo img {
+    
     width: 100px;
+    
+    
 }
 
 
